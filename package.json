@@ -2,23 +2,33 @@
   "name": "url-exists-promise",
   "version": "1.0.0",
   "description": "Check if a url exists.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "keywords": [
+    "exists",
+    "promise",
+    "url"
+  ],
+  "homepage": "https://github.com/DylanVann/url-exists-promise#readme",
+  "bugs": {
+    "url": "https://github.com/DylanVann/url-exists-promise/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DylanVann/url-exists-promise.git"
   },
-  "keywords": [
-    "url",
-    "exists",
-    "promise"
-  ],
-  "author": "Dylan Vann",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/DylanVann/url-exists-promise/issues"
+  "author": "Dylan Vann <dylan@dylanvann.com>",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write 'src/**/*.ts' '*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/DylanVann/url-exists-promise#readme"
+  "devDependencies": {
+    "@types/node": "^10.5.2",
+    "typescript": "^2.9.2"
+  }
 }
