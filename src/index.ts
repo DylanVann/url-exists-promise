@@ -1,7 +1,7 @@
 const nodeHttp = require('http')
 const nodeUrl = require('url')
 
-export const urlExists = (url: string) =>
+export const urlExists = (url: string): Promise<boolean> =>
     new Promise(resolve => {
         const options = {
             method: 'HEAD',
